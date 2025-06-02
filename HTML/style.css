@@ -1,0 +1,21 @@
+body
+{
+    background-color:aqua;
+}
+h2
+{
+    color:orange;
+    text-align:center;
+    margin: 0.5em;
+    padding: 1em;
+    border-style:dotted;
+    border-width: 2px;
+    border-left-width: 3px;
+    border-right-width:3px ;
+}
+
+p
+{
+    font-family:"times new roman";
+    font-size:20px;
+}
