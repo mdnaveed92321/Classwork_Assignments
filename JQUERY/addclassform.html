@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Highlight</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <style>
+    .textBoxStyle {
+      background-color:darkseagreen;
+      color: white;
+    }
+  </style>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('input[type="text"]').each(function () {
+        $(this).focus(function () {
+          $(this).addClass('textBoxStyle');
+        });
+
+        $(this).blur(function () {
+          $(this).removeClass('textBoxStyle');
+        });
+      });
+    });
+  </script>
+</head>
+<body style="font-family: Arial;">
+  <table>
+    <tr>
+      <td>First Name</td>
+      <td><input type="text" /></td>
+    </tr>
+    <tr>
+      <td>Last Name</td>
+      <td><input type="text" /></td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td>
+        <select>
+          <option value="select">Please Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td><input type="text" /></td>
+    </tr>
+  </table>
+</body>
+</html>

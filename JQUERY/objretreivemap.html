@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Example6_map</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      alert($('li').map(function (index, element) {return $(element).text();}).get());
+    });
+  </script>
+</head>
+
+<body style="font-family:Arial;">
+  <ul>
+    <li>US</li>
+    <li>India</li>
+    <li>UK</li>
+    <li>Canada</li>
+    <li>Australia</li>
+  </ul>
+
+  <div id="resultDiv"></div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script type="text/javascript" language="javascript">
+  $(document).ready(function(){
+    var p=$(".p1");
+    for(i=0;i<p.length;i++){
+      alert("Found para:"+ p[i].innerHTML);
+    }
+  });
+</script>
+<body>
+  <div>
+    <p class="p1">This is para 1</p>
+    <p id="pid">This is para 2</p>
+    <p>This is para without selector</p>
+  </div>
+</body>
+</html>

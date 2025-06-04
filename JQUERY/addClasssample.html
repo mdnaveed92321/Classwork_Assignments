@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Class</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script type="text/javascript" language="javascript">
+  $(document).ready(function(){
+    $("em").addClass("selected");
+    $("#myid").addClass("highlight");
+  });
+</script>
+<style>
+  .selected{
+    color:red;
+
+  }    .highlight{
+      background-color: yellow;
+    }
+  
+</style>
+<body>
+  <em title="Bold and Brave">This is first para</em>
+  <p id="myid">This is second para</p>
+  
+</body>
+</html>
